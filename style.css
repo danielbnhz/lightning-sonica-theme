@@ -135,6 +135,25 @@ a:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.4); /* subtle depth */
 }
 
+
+.pattern-gallery {
+  display: flex;                   /* enable flexbox */
+  justify-content: center;         /* center the whole row */
+  align-items: center;             /* vertical alignment */
+  gap: 40px;                       /* space between each image */
+  margin: 40px 0;                  /* top/bottom spacing for the section */
+}
+
+.pattern-item img {
+  width: 100%;
+  max-width: 250px;                /* controls size of images */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+
+
+
 /* Mobile */
 @media (max-width: 768px) {
   .audio-services__inner {

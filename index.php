@@ -2,8 +2,8 @@
 
     <main class="site-main">
         <div class="container">
-            <h1>Retkeren Music Theme is Alive</h1>
-            <p>If you see this, your custom theme works.</p>
+            <h1>Sample Page</h1>
+
         </div>
     </main>
 

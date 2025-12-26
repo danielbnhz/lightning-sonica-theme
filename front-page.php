@@ -66,13 +66,25 @@
         occupies its own space without sacrificing energy or depth.
       </p>
 
-      <p class="audio-services__note">
-        Custom audio previews and before/after comparisons coming soon.
-      </p>
+
     </div>
 
   </div>
 </section>
+
+
+<section class="pattern-gallery">
+  <div class="pattern-item">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/pattern1.webp" alt="Audio visual pattern 1">
+  </div>
+  <div class="pattern-item">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/pattern1.webp" alt="Audio visual pattern 1">
+  </div>
+  <div class="pattern-item">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/pattern1.webp" alt="Audio visual pattern 1">
+  </div>
+</section>
+
 
 
 </main>
