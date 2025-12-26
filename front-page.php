@@ -24,6 +24,57 @@
         </div>
     </section>
 
+
+    <section class="waveform-section">
+    <div class="waveform-section__inner">
+        <img
+        src="<?php echo get_template_directory_uri(); ?>/images/ti_pluck_waveform.webp"
+        alt="Waveform visualization"
+        loading="lazy"
+        />
+    </div>
+    </section>
+
+
+
+
+
+    <section class="audio-services">
+  <div class="audio-services__inner">
+
+    <div class="audio-services__media">
+      <img
+        src="<?php echo get_template_directory_uri(); ?>/images/session_webpage.webp"
+        alt="Audio mixing and electronic music production"
+        loading="lazy"
+      />
+    </div>
+
+    <div class="audio-services__content">
+      <h2>Audio Mixing & Electronic Music Production</h2>
+
+      <p>
+        I offer professional mixing of audio stems and full electronic music
+        production, with a focus on clarity, balance, and impact.
+        Whether you’re working with raw stems or an unfinished idea,
+        I shape sound into something cohesive, dynamic, and intentional.
+      </p>
+
+      <p>
+        My background includes electronic and psytrance production,
+        sound design, and detailed mixdown work — ensuring that each element
+        occupies its own space without sacrificing energy or depth.
+      </p>
+
+      <p class="audio-services__note">
+        Custom audio previews and before/after comparisons coming soon.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
 </main>
 
 <?php get_footer(); ?>

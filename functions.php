@@ -7,7 +7,7 @@ add_action('after_setup_theme', 'lightning_sonica_theme_setup');
 
 function lightning_sonica_enqueue_assets() {
     wp_enqueue_style(
-        'retkeren-style',
+        'lightning-sonica-style',
         get_stylesheet_uri(),
         [],
         '1.0'

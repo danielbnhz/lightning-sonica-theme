@@ -78,3 +78,66 @@ a:hover {
     border-radius: 12px;
     overflow: hidden;
 }
+
+
+.audio-services {
+  padding: 4rem 1.5rem;
+  background: #0e0e0e;
+  color: #f5f5f5;
+}
+
+.audio-services__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.audio-services__media img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+.audio-services__content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.audio-services__content p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  opacity: 0.95;
+}
+
+.audio-services__note {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  font-style: italic;
+}
+
+.waveform-section {
+  padding: 2rem 1rem;
+  background: #111; /* optional, contrasts against audio section */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.waveform-section__inner img {
+  width: 100%;
+  max-width: 800px; /* or whatever fits your layout */
+  height: auto;
+  border-radius: 8px; /* optional */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4); /* subtle depth */
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .audio-services__inner {
+    grid-template-columns: 1fr;
+  }
+}
