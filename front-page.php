@@ -26,7 +26,7 @@
 
 
     <section class="waveform-section">
-    <div class="waveform-section__inner">
+    <div class="waveform-section__inner container">
         <img
         src="<?php echo get_template_directory_uri(); ?>/images/ti_pluck_waveform.webp"
         alt="Waveform visualization"
@@ -72,43 +72,52 @@
   </div>
 </section>
 
+<section>
+  <div class="pattern-gallery">
+    <div class="pattern-item">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/pattern1.webp" alt="Audio visual pattern 1">
+    </div>
+    <div class="pattern-item">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/pattern1.webp" alt="Audio visual pattern 1">
+    </div>
+    <div class="pattern-item">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/pattern1.webp" alt="Audio visual pattern 1">
+    </div>
+    </div>
+   </section>
 
-<section class="pattern-gallery">
-  <div class="pattern-item">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/pattern1.webp" alt="Audio visual pattern 1">
-  </div>
-  <div class="pattern-item">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/pattern1.webp" alt="Audio visual pattern 1">
-  </div>
-  <div class="pattern-item">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/pattern1.webp" alt="Audio visual pattern 1">
-  </div>
+<section class="contact-section container">
+    <h2 class="contact-title ">Contact</h2>
+
+    <div class="contact-content">
+        <form class="contact-form" method="post" action="#">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="contact-button">
+                Send Message
+            </button>
+        </form>
+
+        <div class="contact-image">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/session_webpage_2.webp" alt="Session visual" />
+        </div>
+    </div>
 </section>
 
 
-<section class="contact-section">
-    <h2 class="contact-title">Contact</h2>
-
-    <form class="contact-form" method="post" action="#">
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-
-        <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-
-        <button type="submit" class="contact-button">
-            Send Message
-        </button>
-    </form>
 </section>
 
 

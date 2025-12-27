@@ -3,6 +3,12 @@ Theme Name: lightning sonica music
 Author: Daniel
 Version: 1.0
 */
+
+/*
+
+color scheme: 
+
+*/
 /* ---------- Reset ---------- */
 * {
     box-sizing: border-box;
@@ -11,7 +17,7 @@ Version: 1.0
 body {
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background: #0e0e11;
+    background: #ffffff;
     color: #eaeaf0;
     line-height: 1.6;
 }
@@ -21,7 +27,10 @@ body {
     max-width: 1100px;
     margin: 0 auto;
     padding: 1.5rem;
+    background-color: #000;
 }
+
+
 
 .site-header {
     position: relative;        /* parent for absolute child */
@@ -79,9 +88,11 @@ a:hover {
     opacity: 0.8;
 }
 
+
 /* ---------- Music Section ---------- */
 .music {
     padding: 4rem 0;
+    background-color: #ffffff;
 }
 
 .soundcloud-embed {
@@ -152,7 +163,8 @@ a:hover {
   justify-content: center;         /* center the whole row */
   align-items: center;             /* vertical alignment */
   gap: 40px;                       /* space between each image */
-  margin: 40px 0;                  /* top/bottom spacing for the section */
+  margin: 40px 0; 
+  background-color: #000000;                 /* top/bottom spacing for the section */
 }
 
 .pattern-item img {
@@ -189,12 +201,17 @@ a:hover {
 }
 
 
-/* form */
-
 .contact-section {
-    background:oklab(0% 0 0 / 0.067);
+    background-color: #222;
     padding: 80px 20px;
     width: 100%;
+}
+
+/* NEW: wrapper for form + image */
+.contact-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
 }
 
 .contact-title {
@@ -210,8 +227,22 @@ a:hover {
 .contact-form {
     max-width: 600px;
     margin-left: 20px;
+    flex: 1;
 }
 
+.contact-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* form groups */
 .form-group {
     display: flex;
     flex-direction: column;
@@ -262,8 +293,6 @@ a:hover {
 }
 
 
-
-
 /* Mobile */
 @media (max-width: 768px) {
   .audio-services__inner {
@@ -275,6 +304,8 @@ a:hover {
         font-size: 2rem;
     }
 
-
+  .contact-section {
+    flex-direction: column;
+  }
 
 }
