@@ -6,7 +6,8 @@ Version: 1.0
 
 /*
 
-color scheme: 
+               #0e0e0e;
+color scheme: grey tone
 
 */
 /* ---------- Reset ---------- */
@@ -143,7 +144,7 @@ a:hover {
 
 .waveform-section {
   padding: 2rem 1rem;
-  background: #111;  
+  background: #ffffff;  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -205,6 +206,7 @@ a:hover {
     background-color: #222;
     padding: 80px 20px;
     width: 100%;
+    margin-bottom: 80px;
 }
 
 /* NEW: wrapper for form + image */
