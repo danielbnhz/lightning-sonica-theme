@@ -10,6 +10,7 @@
             </p>
         </div>
     </section>
+  <div class="section-divider"></div>
 
     <section class="music">
         <div class="container">
@@ -24,6 +25,7 @@
         </div>
     </section>
 
+  <div class="section-divider"></div>
 
     <section class="waveform-section">
     <div class="waveform-section__inner container">
@@ -36,6 +38,7 @@
     </section>
 
 
+  <div class="section-divider"></div>
 
 
 
@@ -71,6 +74,7 @@
 
   </div>
 </section>
+<div class="section-divider"></div>
 
 <section>
   <div class="pattern-gallery">
@@ -120,6 +124,7 @@
 
 </section>
 
+  <div class="section-divider"></div>
 
 
 

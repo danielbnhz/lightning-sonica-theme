@@ -6,14 +6,21 @@ Version: 1.0
 
 /*
 
-               #0e0e0e;
-color scheme: grey tone
+               #191618; | #5a2cff;
+color scheme: grey tone | purple dark
 
 */
 /* ---------- Reset ---------- */
 * {
     box-sizing: border-box;
 }
+
+
+
+html, body {
+  overflow-x: hidden;
+}
+
 
 body {
     margin: 0;
@@ -28,20 +35,57 @@ body {
     max-width: 1100px;
     margin: 0 auto;
     padding: 1.5rem;
-    background-color: #000;
+    background-color:#191618;
+    border: 4px solid #5a2cff;
+
+    border-radius: 7%;
+    box-shadow: 0 0 15px rgba(128, 0, 255, 0.2);
+}
+
+.section-divider {
+    width: 60px;               /* width of the rectangle */
+    height: 6px;               /* thickness */
+    background-color: #5a2cff; 
+    margin: 40px auto;         /* vertical spacing + centered */
+    border-radius: 3px;        /* slightly rounded edges */
 }
 
 
-
+/* Header container using flex */
 .site-header {
-    position: relative;        /* parent for absolute child */
-    height: 140px;             /* total header height */
-    width: 100%;
-    background-color: #000;    
-
+    display: flex;
+    justify-content: space-between; /* H1 left, icons right */
+    align-items: center;
+    padding: 20px;                /* top/bottom and side padding */
+    background-color: #191618; 
+    position: relative;           /* in case you need layering */
 }
+
+/* Header title */
+.full-width-header-text h1 {
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    margin: 0;
+    background: linear-gradient(to top, #ffffff, #b58fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(181, 143, 255, 0.7);
+}
+
+/* Social icons container */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Social images */
+.social-icons img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
 .site-footer {
-    background: #111;
+    background: #191618;
     border-bottom: 1px solid #222;
 }
 
@@ -49,7 +93,7 @@ body {
     border-top: 1px solid #222;
     text-align: center;
     font-size: 0.9rem;
-    background-color: #000;
+    background-color: #191618;
 }
 
 /* ---------- Typography ---------- */
@@ -105,7 +149,7 @@ a:hover {
 
 .audio-services {
   padding: 4rem 1.5rem;
-  background: #0e0e0e;
+  background: #191618;
   color: #f5f5f5;
 }
 
@@ -176,26 +220,7 @@ a:hover {
 }
 
 
-/* Full-width header text hugging the left edge */
-.full-width-header-text {
-    position: absolute;
-    top: 25px;
-    left: 0;
-    width: 100vw;
-    height: 75px;            /* adjust to match desired banner height */
-    display: flex;
-    align-items: center;      /* vertical centering */
-    padding-left: 20px;       /* optional spacing from left edge */
-}
 
-.full-width-header-text h1 {
-    font-size: clamp(1.8rem, 5vw, 2.8rem);
-    margin: 0;
-    background: linear-gradient(to top, #ffffff, #b58fff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 10px rgba(181, 143, 255, 0.7);
-}
 
 .shadow-header {
     text-shadow: 2px 2px 16px rgba(0, 0, 0, 0.5); /* x-offset, y-offset, blur, color */
@@ -203,7 +228,7 @@ a:hover {
 
 
 .contact-section {
-    background-color: #222;
+    background-color: #000000;
     padding: 80px 20px;
     width: 100%;
     margin-bottom: 80px;
