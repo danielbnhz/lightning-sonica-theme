@@ -5,16 +5,23 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-    <header class="site-header">
-        <div class="container">
-            <h1 class="site-title">
-                <a href="<?php echo home_url(); ?>">
-                    Lightning Sonica
-                </a>
-            </h1>
+<header class="site-header">
+  
+  <!-- Full-width left-hugging header text -->
+  <div class="full-width-header-text">
+      <h1>Lightning Sonica</h1>
+  </div>
 
-            <nav class="site-nav">
-                <?php wp_nav_menu(['theme_location' => 'main']); ?>
-            </nav>
-        </div>
-    </header>
+  <!-- Normal site navigation -->
+  <div class="container">
+      <?php
+      if (has_nav_menu('primary')) {
+          wp_nav_menu([
+              'theme_location' => 'primary',
+              'menu_class' => 'primary-menu',
+          ]);
+      }
+      ?>
+  </div>
+
+</header>

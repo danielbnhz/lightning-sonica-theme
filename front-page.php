@@ -4,7 +4,7 @@
 
     <section class="hero">
         <div class="container">
-            <h1>Lightning Sonica</h1>
+            <h1 class="shadow-header">Electronic Music</h1>
             <p class="tagline">
                 Psytrance · Sound · Systems
             </p>
@@ -84,6 +84,33 @@
     <img src="<?php echo get_template_directory_uri(); ?>/images/pattern1.webp" alt="Audio visual pattern 1">
   </div>
 </section>
+
+
+<section class="contact-section">
+    <h2 class="contact-title">Contact</h2>
+
+    <form class="contact-form" method="post" action="#">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="contact-button">
+            Send Message
+        </button>
+    </form>
+</section>
+
 
 
 

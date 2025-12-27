@@ -23,7 +23,13 @@ body {
     padding: 1.5rem;
 }
 
-.site-header,
+.site-header {
+    position: relative;        /* parent for absolute child */
+    height: 140px;             /* total header height */
+    width: 100%;
+    background-color: #000;    
+
+}
 .site-footer {
     background: #111;
     border-bottom: 1px solid #222;
@@ -33,6 +39,7 @@ body {
     border-top: 1px solid #222;
     text-align: center;
     font-size: 0.9rem;
+    background-color: #000;
 }
 
 /* ---------- Typography ---------- */
@@ -53,6 +60,10 @@ a:hover {
 
 /* ---------- Hero ---------- */
 .hero {
+    /* margin-top:55px; */
+    display:flex;
+    justify-content: center;
+    /* gap:20px; */
     padding: 6rem 0 4rem;
     text-align: center;
     background: url('images/hero.webp') center/cover no-repeat;
@@ -121,7 +132,7 @@ a:hover {
 
 .waveform-section {
   padding: 2rem 1rem;
-  background: #111; /* optional, contrasts against audio section */
+  background: #111;  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,7 +140,7 @@ a:hover {
 
 .waveform-section__inner img {
   width: 100%;
-  max-width: 800px; /* or whatever fits your layout */
+  max-width: 800px;  
   height: auto;
   border-radius: 8px; /* optional */
   box-shadow: 0 4px 12px rgba(0,0,0,0.4); /* subtle depth */
@@ -152,6 +163,105 @@ a:hover {
 }
 
 
+/* Full-width header text hugging the left edge */
+.full-width-header-text {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100vw;
+    height: 75px;            /* adjust to match desired banner height */
+    display: flex;
+    align-items: center;      /* vertical centering */
+    padding-left: 20px;       /* optional spacing from left edge */
+}
+
+.full-width-header-text h1 {
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    margin: 0;
+    background: linear-gradient(to top, #ffffff, #b58fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(181, 143, 255, 0.7);
+}
+
+.shadow-header {
+    text-shadow: 2px 2px 16px rgba(0, 0, 0, 0.5); /* x-offset, y-offset, blur, color */
+}
+
+
+/* form */
+
+.contact-section {
+    background:oklab(0% 0 0 / 0.067);
+    padding: 80px 20px;
+    width: 100%;
+}
+
+.contact-title {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    background: linear-gradient(to top, #ffffff, #b58fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin-left: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    color: #cbb6ff;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+}
+
+.form-group input,
+.form-group textarea {
+    background: #05000c;
+    border: 1px solid rgba(181, 143, 255, 0.35);
+    color: #ffffff;
+    padding: 12px 14px;
+    font-size: 1rem;
+    border-radius: 6px;
+    outline: none;
+    transition: border 0.25s ease, box-shadow 0.25s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #b58fff;
+    box-shadow: 0 0 12px rgba(181, 143, 255, 0.45);
+}
+
+.contact-button {
+    background: linear-gradient(135deg, #5a2cff, #b58fff);
+    color: #000;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    box-shadow: 0 0 18px rgba(181, 143, 255, 0.5);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.contact-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 28px rgba(181, 143, 255, 0.8);
+}
+
+
 
 
 /* Mobile */
@@ -159,4 +269,12 @@ a:hover {
   .audio-services__inner {
     grid-template-columns: 1fr;
   }
+
+
+    .full-width-header-text h1 {
+        font-size: 2rem;
+    }
+
+
+
 }
