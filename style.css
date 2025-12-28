@@ -320,6 +320,25 @@ a:hover {
 }
 
 
+
+.blog-archive, .blog-post {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 30px;
+}
+
+.blog-card {
+    margin-bottom: 40px;
+    border-bottom: 2px solid #5a2cff; /* subtle purple divider */
+    padding-bottom: 20px;
+}
+
+.blog-card h2 a {
+    color: #b58fff; /* gradient-inspired link */
+    text-decoration: none;
+}
+
+
 /* Mobile */
 @media (max-width: 768px) {
   .audio-services__inner {
