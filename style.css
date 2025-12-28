@@ -37,18 +37,25 @@ body {
     display: flex;
     flex-direction: column;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background: #ffffff;
+    background-color: transparent;
     color: #eaeaf0;
     line-height: 1.6;
 
-    background-image: repeating-linear-gradient(
-        45deg,
-        rgba(90, 44, 255, 0.15) 0,
-        rgba(90, 44, 255, 0.15) 2px,
-        transparent 2px,
-        transparent 20px
-    );
+    background-image:
+        url("images/waveform_bg.webp"),
+        repeating-linear-gradient(
+            45deg,
+            rgba(90, 44, 255, 0.15) 0,
+            rgba(90, 44, 255, 0.15) 2px,
+            transparent 2px,
+            transparent 20px
+        );
+
+    background-repeat: no-repeat, repeat;
+    background-position: center top, center;
+    background-size: 100% auto, auto;
 }
+
 main {
     flex: 1 0 auto;
 }
@@ -67,7 +74,7 @@ main {
     border: 4px solid #5a2cff;
 
     border-radius: 7%;
-    box-shadow: 0 0 15px rgba(128, 0, 255, 0.2);
+    box-shadow: 0 0 15px rgba(128, 0, 255, 0.7);
 }
 
 .section-divider {
@@ -196,7 +203,7 @@ a:hover {
 /* ---------- Music Section ---------- */
 .music {
     padding: 4rem 0;
-    background-color: #ffffff;
+    background-color: #transparent;
     width:75%;
 }
 
@@ -248,7 +255,7 @@ a:hover {
 
 .waveform-section {
   padding: 2rem 1rem;
-  background: #ffffff;  
+  background: #transparent;  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -407,6 +414,7 @@ a:hover {
     display: flex;
     align-items: center;       /* vertically centers items */
     justify-content: center;   /* optional: centers the row horizontally */
+    background: none;
     gap: 20px;                 /* space between squares and section */
 }
 
