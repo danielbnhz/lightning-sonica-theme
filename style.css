@@ -23,8 +23,13 @@ html, body {
   margin:0;
 }
 
+h2{
+    font-weight: 800;
+}
+
 h1,h2 {
     color:#b58fff;
+    text-transform: uppercase;
 }
 
 body {
@@ -47,13 +52,18 @@ body {
 main {
     flex: 1 0 auto;
 }
+.square {
+    width: 30px;           /* adjust size as needed */
+    height: 30px;
+    background-color: #5a2cff;
+}
 
 /* ---------- Layout ---------- */
 .container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 1.5rem;
-    background-color:#191618;
+    background: linear-gradient(to bottom, #191618, #000000);
     border: 4px solid #5a2cff;
 
     border-radius: 7%;
@@ -72,11 +82,30 @@ main {
 /* Header container using flex */
 .site-header {
     display: flex;
-    justify-content: space-between; /* H1 left, icons right */
+    justify-content: space-between;
     align-items: center;
-    padding: 20px;                /* top/bottom and side padding */
-    background-color: #191618; 
-    position: relative;           /* in case you need layering */
+    padding: 20px;
+    background-color: #191618;
+    border-bottom: 4px solid #5a2cff;
+
+}
+
+
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* space between nav and icons */
+}
+
+.header-nav a {
+    color: #b58fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
 }
 
 /* Header title */
@@ -168,6 +197,7 @@ a:hover {
 .music {
     padding: 4rem 0;
     background-color: #ffffff;
+    width:75%;
 }
 
 .soundcloud-embed {
@@ -239,7 +269,7 @@ a:hover {
   align-items: center;             /* vertical alignment */
   gap: 40px;                       /* space between each image */
   margin: 40px 0; 
-  background-color: #000000;                 /* top/bottom spacing for the section */
+  background: linear-gradient(to bottom, #191618, #000000);
 }
 
 .pattern-item img {
@@ -366,6 +396,18 @@ a:hover {
 .blog-card h2 a {
     color: #b58fff; /* gradient-inspired link */
     text-decoration: none;
+}
+
+.header-nav a + a::before {
+    content: "|";
+    margin: 0 10px;
+    color: #b58fff;
+}
+.row-layout {
+    display: flex;
+    align-items: center;       /* vertically centers items */
+    justify-content: center;   /* optional: centers the row horizontally */
+    gap: 20px;                 /* space between squares and section */
 }
 
 

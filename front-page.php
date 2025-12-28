@@ -11,6 +11,9 @@
         </div>
     </section>
   <div class="section-divider"></div>
+    
+<div class="row-layout">
+    <div class="square"></div>
 
     <section class="music">
         <div class="container">
@@ -19,24 +22,34 @@
             <div class="soundcloud-embed">
                 <iframe width="100%" height="350" scrolling="no" frameborder="no" allow="autoplay"
                  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2164296806&color=%238c748c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                 <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/lightning_sonica" title="lightning_sonica" target="_blank" style="color: #cccccc; text-decoration: none;">lightning_sonica</a> · <a href="https://soundcloud.com/lightning_sonica/sets/entity-playlist" title="Entity Playlist" target="_blank" 
-                    style="color: #cccccc; text-decoration: none;">Entity Playlist</a></div>
+                 <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                    <a href="https://soundcloud.com/lightning_sonica" title="lightning_sonica" target="_blank" style="color: #cccccc; text-decoration: none;">lightning_sonica</a> · 
+                    <a href="https://soundcloud.com/lightning_sonica/sets/entity-playlist" title="Entity Playlist" target="_blank" style="color: #cccccc; text-decoration: none;">Entity Playlist</a>
+                 </div>
             </div>
         </div>
     </section>
 
+    <div class="square"></div>
+</div>
+
   <div class="section-divider"></div>
 
+<div class="row-layout">
+    <div class="square"></div>
+
     <section class="waveform-section">
-    <div class="waveform-section__inner container">
-        <img
-        src="<?php echo get_template_directory_uri(); ?>/images/ti_pluck_waveform.webp"
-        alt="Waveform visualization"
-        loading="lazy"
-        />
-    </div>
+        <div class="waveform-section__inner container">
+            <img
+                src="<?php echo get_template_directory_uri(); ?>/images/ti_pluck_waveform.webp"
+                alt="Waveform visualization"
+                loading="lazy"
+            />
+        </div>
     </section>
 
+    <div class="square"></div>
+</div>
 
   <div class="section-divider"></div>
 
