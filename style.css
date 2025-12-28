@@ -40,16 +40,16 @@ body {
     background-color: transparent;
     color: #eaeaf0;
     line-height: 1.6;
-
     background-image:
         url("images/waveform_bg.webp"),
         repeating-linear-gradient(
             45deg,
-            rgba(90, 44, 255, 0.15) 0,
-            rgba(90, 44, 255, 0.15) 2px,
+            rgba(90, 44, 255, 0.25) 0,
+            rgba(90, 44, 255, 0.25) 2px,
             transparent 2px,
-            transparent 20px
+            transparent 12px
         );
+    background-blend-mode: overlay;
 
     background-repeat: no-repeat, repeat;
     background-position: center top, center;
@@ -88,13 +88,32 @@ main {
 
 /* Header container using flex */
 .site-header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     background-color: #191618;
     border-bottom: 4px solid #5a2cff;
+    overflow: hidden;
+}
 
+.site-header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("images/waveform_header.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75% auto;
+    opacity: 0.3;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.site-header > * {
+    position: relative;
+    z-index: 1;
 }
 
 
@@ -141,25 +160,58 @@ main {
 
 
 footer {
-    flex-shrink: 0; /* prevents it from shrinking */
+    position: relative;        /* needed for ::before */
+    flex-shrink: 0;
     padding: 20px;
-    background-color: #191618;
+    background-color: #191618; /* fallback if image fails */
     color: #ffffff;
     text-align: center;
-
+    overflow: hidden;          /* contain pseudo-element */
 }
 
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("images/waveform_header.webp"); /* same waveform as header */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.3;              /* control transparency */
+    z-index: 0;                /* behind footer content */
+    pointer-events: none;
+}
 
-.site-footer {
-    background: #191618;
-    border-bottom: 1px solid #222;
+footer > * {
+    position: relative;
+    z-index: 1;                /* above the waveform */
 }
 
 .site-footer {
-    border-top: 1px solid #222;
+    position: relative;       /* required for ::before */
     text-align: center;
     font-size: 0.9rem;
+    border-top: 1px solid #222;
     background-color: #191618;
+    overflow: hidden;         /* keeps pseudo-element contained */
+}
+
+.site-footer::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("images/waveform_header.webp"); /* same image as header */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;   /* adjust zoom if needed */
+    opacity: 0.3;             /* adjust transparency */
+    z-index: 0;
+    pointer-events: none;     /* allows clicking links above */
+}
+
+.site-footer > * {
+    position: relative;
+    z-index: 1;               /* content above the waveform */
 }
 
 /* ---------- Typography ---------- */
@@ -203,7 +255,7 @@ a:hover {
 /* ---------- Music Section ---------- */
 .music {
     padding: 4rem 0;
-    background-color: #transparent;
+    background-color: transparent;
     width:75%;
 }
 
@@ -255,7 +307,7 @@ a:hover {
 
 .waveform-section {
   padding: 2rem 1rem;
-  background: #transparent;  
+  background: transparent;  
   display: flex;
   justify-content: center;
   align-items: center;
