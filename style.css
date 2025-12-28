@@ -6,8 +6,8 @@ Version: 1.0
 
 /*
 
-               #191618; | #5a2cff;
-color scheme: grey tone | purple dark
+               #191618; | #5a2cff;    | #b58fff
+color scheme: grey tone | purple dark | lighter purple
 
 */
 /* ---------- Reset ---------- */
@@ -19,15 +19,33 @@ color scheme: grey tone | purple dark
 
 html, body {
   overflow-x: hidden;
+  height:100%;
+  margin:0;
 }
 
+h1,h2 {
+    color:#b58fff;
+}
 
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     background: #ffffff;
     color: #eaeaf0;
     line-height: 1.6;
+
+    background-image: repeating-linear-gradient(
+        45deg,
+        rgba(90, 44, 255, 0.15) 0,
+        rgba(90, 44, 255, 0.15) 2px,
+        transparent 2px,
+        transparent 20px
+    );
+}
+main {
+    flex: 1 0 auto;
 }
 
 /* ---------- Layout ---------- */
@@ -83,6 +101,18 @@ body {
     height: 32px;
     cursor: pointer;
 }
+
+
+
+footer {
+    flex-shrink: 0; /* prevents it from shrinking */
+    padding: 20px;
+    background-color: #191618;
+    color: #ffffff;
+    text-align: center;
+
+}
+
 
 .site-footer {
     background: #191618;
