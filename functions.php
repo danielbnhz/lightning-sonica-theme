@@ -21,3 +21,15 @@ function lightning_sonica_menus() {
     ]);
 }
 add_action('init', 'lightning_sonica_menus');
+
+
+function enqueue_custom_bundle() {
+    wp_enqueue_script(
+        'custom-bundle',
+        get_template_directory_uri() . '/dist/bundle.js',
+        array(),
+        '1.0',
+        true
+    );
+}
+add_action('wp_enqueue_scripts', 'enqueue_custom_bundle');
