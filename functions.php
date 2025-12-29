@@ -22,13 +22,12 @@ function lightning_sonica_menus() {
 }
 add_action('init', 'lightning_sonica_menus');
 
-
 function enqueue_custom_bundle() {
     wp_enqueue_script(
-        'custom-bundle',
-        get_template_directory_uri() . '/dist/bundle.js',
-        array(),
-        '1.0',
+        'custom-bundle', 
+        get_template_directory_uri() . '/dist/main.js', 
+        array(), 
+        filemtime(get_template_directory() . '/dist/main.js'), // cache-busting
         true
     );
 }

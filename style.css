@@ -140,10 +140,10 @@ main {
 .full-width-header-text h1 {
     font-size: clamp(1.8rem, 5vw, 2.8rem);
     margin: 0;
-    background: linear-gradient(to top, #ffffff, #b58fff);
+    /* background: linear-gradient(to top, #ffffff, #b58fff); */
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 10px rgba(181, 143, 255, 0.7);
+    /* -webkit-text-fill-color: transparent; */
+    /* text-shadow: 0 0 10px rgba(181, 143, 255, 0.7); */
 }
 
 /* Social icons container */
