@@ -19,10 +19,11 @@
             <a href="<?php echo home_url('/about/'); ?>">About</a>
         </nav>
         <div class="social-icons">
-            <a href="https://www.facebook.com/" target="_blank">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/fbpurp.webp" alt="Facebook">
+            <a href="https://www.instagram.com/lightning_sonica/" target="_blank">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/igpurp.webp" alt="Instagram">
             </a>
-            <a href="https://www.youtube.com/" target="_blank">
+
+            <a href="https://www.youtube.com/@lightningsonica" target="_blank">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/ytpurp.webp" alt="YouTube">
             </a>
         </div>
