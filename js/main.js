@@ -34,4 +34,30 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
+  const sections = document.querySelectorAll('.fade-in-section');
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animate(entry.target, {
+            opacity: [0, 1],
+            translateY: [20, 0], // optional subtle lift
+            duration: 800,
+            easing: 'outExpo'
+          });
+
+          observer.unobserve(entry.target); // animate once
+        }
+      });
+    },
+    {
+      threshold: 0.2 // 20% visible before triggering
+    }
+  );
+
+  sections.forEach(section => observer.observe(section));
+
+
+
 });

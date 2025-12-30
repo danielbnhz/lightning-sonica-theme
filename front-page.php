@@ -35,7 +35,7 @@
 
   <div class="section-divider"></div>
 
-<div class="row-layout">
+<div class="row-layout fade-in-section">
     <div class="square"></div>
 
     <section class="waveform-section">
@@ -90,14 +90,14 @@
 <div class="section-divider"></div>
 
 <section>
-  <div class="pattern-gallery">
-    <div class="pattern-item">
+  <div class="pattern-gallery ">
+    <div class="pattern-item fade-in-section">
       <img src="<?php echo get_template_directory_uri(); ?>/images/pattern1.webp" alt="Audio visual pattern 1">
     </div>
-    <div class="pattern-item">
+    <div class="pattern-item fade-in-section">
       <img src="<?php echo get_template_directory_uri(); ?>/images/pattern1.webp" alt="Audio visual pattern 1">
     </div>
-    <div class="pattern-item">
+    <div class="pattern-item fade-in-section">
       <img src="<?php echo get_template_directory_uri(); ?>/images/pattern1.webp" alt="Audio visual pattern 1">
     </div>
     </div>
