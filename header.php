@@ -15,7 +15,7 @@
     <div class="header-right">
         <nav class="header-nav">
             <a href="<?php echo home_url(); ?>">Home</a>
-            <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>">Blog</a>
+            <!-- <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>">Blog</a> -->
             <a href="<?php echo home_url('/about/'); ?>">About</a>
         </nav>
         <div class="social-icons">

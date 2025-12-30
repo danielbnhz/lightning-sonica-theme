@@ -232,17 +232,17 @@ a:hover {
 }
 
 
-/* ---------- Hero ---------- */
 .hero {
-    /* margin-top:55px; */
-    display:flex;
-    justify-content: center;
-    /* gap:20px; */
-    padding: 6rem 0 4rem;
-    text-align: center;
-    background: url('images/hero.webp') center/cover no-repeat;
-    color: #fff;
+  width: 100vw;           /* full viewport width */
+  margin-left: calc(-50vw + 50%); /* neutralize container centering */
+  padding: 6rem 0 4rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: url('images/hero.webp') center/cover no-repeat;
+  color: #fff;
 }
+
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
