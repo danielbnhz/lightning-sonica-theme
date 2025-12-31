@@ -137,6 +137,27 @@
 
 </section>
 
+<section class="music-visualizer">
+    <div class="music-container container">
+        <h2>YouTube</h2>
+        <p class="music-description">
+           More videos arriving soon ^_^
+        </p>
+
+        <div class="video-wrapper">
+            <iframe 
+                src="https://www.youtube.com/embed/yVDIEmVkTjM"
+                title="Music Visualizer"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</section>
+
+
+
   <div class="section-divider"></div>
 
 
